@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Wesley Silva",
+      "email": "wdias00@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "id": "4924",
+      "title": "Produto 1",
+      "price": 150
+    }
+  ],
+  "session": [
+    {
+      "id": "1",
+      "name": "Wesley Silva",
+      "email": "wdias00@gmail.com",
+      "telefone": "1107574112",
+      "password": "91527"
+    },
+    {
+      "id": "4341",
+      "name": "Wesley Silva",
+      "email": "wdias00@gmail.com",
+      "telefone": "1107574112",
+      "token": ""
+    },
+    {
+      "id": "84fd",
+      "name": "Wesley Silva",
+      "email": "wdias00@gmail.com",
+      "telefone": "1107574112",
+      "token": ""
+    }
+  ]
+}
