@@ -7,16 +7,16 @@ export default function SignIn(){
 
     const {signIn} = useContext(AuthContext);
 
-    const [telefone, setTelefone] = useState('')
+    const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     async function handleLogin(){
         
-        if(telefone===''||password===''){
+        if(email===''||password===''){
             return;
         }
         //console.log("Telefone digitado" +telefone)
-        await signIn({telefone,password})
+        await signIn({email,password})
     }
 
     return(
@@ -24,17 +24,15 @@ export default function SignIn(){
         <Image
             style={styles.logo}
             source={require('../../assets/logo2.png')}
-        />
-
-        
+        />        
 
             <View style={styles.inputContainer}>
                 <TextInput
                     placeholder="Digite seu telefone"
                     style={styles.input}
                     placeholderTextColor="#FFFFFF"
-                    value={telefone}
-                    onChangeText={setTelefone}
+                    value={email}
+                    onChangeText={setEmail}
                 />
                 <TextInput
                     placeholder="Sua Senha"

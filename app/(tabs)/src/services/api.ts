@@ -9,7 +9,8 @@ const api = axios.create({
   //baseURL: 'https://my-json-server.typicode.com/WesleyDSilva/api_teste/session'
   // baseURL: 'https://run.mocky.io/v3/934daab8-c528-40f5-adac-c60921691cf9'
    
-   baseURL: 'https://api.jsonbin.io/v3/qs/66d37504ad19ca34f89df7bb'
+  //baseURL: 'https://api.jsonbin.io/v3/qs/66d37504ad19ca34f89df7bb'
+  baseURL: 'https://reqres.in'
    
 })
 

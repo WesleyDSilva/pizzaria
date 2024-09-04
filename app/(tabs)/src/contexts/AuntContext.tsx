@@ -9,7 +9,7 @@ type AuthContextData = {
 type UserProps ={
     id: string;
     name: string;
-    telefone: string;
+    email: string;
     token: string
 }
 
@@ -19,7 +19,7 @@ type AuthProviderProps = {
 
 type SignInProps = {
     // email: string;
-    telefone: string;
+    email: string;
     password: string;
 }
 
@@ -31,7 +31,7 @@ export function AuthProvider({children}: AuthProviderProps){
     const[user,seUser] = useState<UserProps>({
         id: '',
         name: '',
-        telefone: '',
+        email: '',
         token: ''
     })
 
@@ -39,15 +39,16 @@ export function AuthProvider({children}: AuthProviderProps){
 
     const isAuthenticated = !!user.name;
 
-    async function signIn({telefone,password}:SignInProps){
+    async function signIn({email,password}:SignInProps){
         setLoadingAuth(true);
-        console.log(telefone);
+        console.log(email);
         console.log(password);
 
         try{
             //const response = await api.post('/session',{
-            const response = await api.post('/66d37504ad19ca34f89df7bb',{
-                telefone,
+            const response = await api.post('/api/login',{
+                // telefone,
+                email,
                 password
             })
 
