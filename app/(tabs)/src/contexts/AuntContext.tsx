@@ -41,9 +41,12 @@ export function AuthProvider({children}: AuthProviderProps){
 
     async function signIn({telefone,password}:SignInProps){
         setLoadingAuth(true);
+        console.log(telefone);
+        console.log(password);
 
         try{
-            const response = await api.post('/session',{
+            //const response = await api.post('/session',{
+            const response = await api.post('/66d37504ad19ca34f89df7bb',{
                 telefone,
                 password
             })

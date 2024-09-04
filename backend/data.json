@@ -8,32 +8,17 @@
   ],
   "products": [
     {
-      "id": "4924",
+      "id": "1",
       "title": "Produto 1",
-      "price": 150
+      "price": 150,
+      "name": "Wesley Silva",
+      "email": "wdias00@gmail.com"
     }
   ],
   "session": [
     {
-      "id": "1",
-      "name": "Wesley Silva",
-      "email": "wdias00@gmail.com",
       "telefone": "1107574112",
-      "password": "91527"
-    },
-    {
-      "id": "4341",
-      "name": "Wesley Silva",
-      "email": "wdias00@gmail.com",
-      "telefone": "1107574112",
-      "token": ""
-    },
-    {
-      "id": "84fd",
-      "name": "Wesley Silva",
-      "email": "wdias00@gmail.com",
-      "telefone": "1107574112",
-      "token": ""
+      "password": "91527"      
     }
   ]
 }
